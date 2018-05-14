@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <!-- HOme Card View -->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/home_card_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/home_card_view_bottomMargin"
+            android:layout_marginTop="@dimen/home_card_view_topMargin"
+            card_view:cardBackgroundColor="@color/homeCardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/home_card"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/homeCardImage"
+                        android:src="@drawable/homecard" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/home_card_EditTextBottomMargin"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/homeCardInputHint"
+                    android:inputType="textCapWords"
+                    android:maxLength="20"
+                    android:text=""
+                    android:textColor="#ffffff"
+                    android:textColorHint="@color/hintText_Color"
+                    android:textStyle="normal" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Quiz Question One on Elephant Options with Radio Button-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/elephantCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            card_view:cardBackgroundColor="@color/cardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/elephantImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cDescriptionElephant"
+                        android:cropToPadding="true"
+                        android:src="@drawable/elephant" />
+
+                    <TextView
+                        android:id="@+id/elephantCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/cardTitleBackground"
+                        android:padding="@dimen/cardTitleFontPadding"
+                        android:text="@string/elephantCardTitle"
+                        android:textColor="@color/cardTitleFontColor"
+                        android:textSize="@dimen/cardTitleFontSize" />
+
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/elephantButtonQestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/paddingCardText">
+
+                    <RadioButton
+                        android:id="@+id/elephantAge150"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/elephantAge_Opt1" />
+
+                    <RadioButton
+                        android:id="@+id/elephantAge100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/elephantAge_Opt2" />
+
+                    <RadioButton
+                        android:id="@+id/elephantAge70"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/elephantAge_Opt3" />
+
+                    <RadioButton
+                        android:id="@+id/elephantAge30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/elephantAge_Opt4" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Quiz Question Two on Horses Options with Radio Button-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/horsesCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/cardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/horsesImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cDescriptionHorses"
+                        android:cropToPadding="true"
+                        android:src="@drawable/horse" />
+
+                    <TextView
+                        android:id="@+id/horsesCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/cardTitleBackground"
+                        android:padding="@dimen/cardTitleFontPadding"
+                        android:text="@string/horseCardTitle"
+                        android:textColor="@color/cardTitleFontColor"
+                        android:textSize="@dimen/cardTitleFontSize" />
+
+                </RelativeLayout>
+
+                <RadioGroup
+                    android:id="@+id/horsesButtonQestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="@dimen/paddingCardText">
+
+                    <RadioButton
+                        android:id="@+id/horsesBones175"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/horseBones_Opt1" />
+
+                    <RadioButton
+                        android:id="@+id/horsesBones210"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/horseBones_Opt2" />
+
+                    <RadioButton
+                        android:id="@+id/horsesBones205"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/horseBones_Opt3" />
+
+                    <RadioButton
+                        android:id="@+id/horsesBones267"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/horseBones_Opt4" />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Quiz Question Three on Dog Options with Check Box-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/dogCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/cardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/dogImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cDescriptionDog"
+                        android:cropToPadding="true"
+                        android:src="@drawable/dog" />
+
+                    <TextView
+                        android:id="@+id/dogCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/cardTitleBackground"
+                        android:padding="@dimen/cardTitleFontPadding"
+                        android:text="@string/dogCardTitle"
+                        android:textColor="@color/cardTitleFontColor"
+                        android:textSize="@dimen/cardTitleFontSize" />
+
+                </RelativeLayout>
+
+
+                <!-- This Below linear Layout is for Check Box Options  -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/paddingCardText">
+
+
+                    <CheckBox
+                        android:id="@+id/dogCheckBoxLoving"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dogFacts_Opt1" />
+
+                    <CheckBox
+                        android:id="@+id/dogCheckBoxCaring"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dogFacts_Opt2" />
+
+                    <CheckBox
+                        android:id="@+id/dogCheckBoxHate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dogFacts_Opt3" />
+
+                    <CheckBox
+                        android:id="@+id/dogCheckBoxProtecting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dogFacts_Opt4" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Quiz Question Four on Flamingo Options with Check Box-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/flamingoCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/cardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/flamingoImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cDescriptionCat"
+                        android:cropToPadding="true"
+                        android:src="@drawable/flamingo" />
+
+                    <TextView
+                        android:id="@+id/flamingoCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/cardTitleBackground"
+                        android:padding="@dimen/cardTitleFontPadding"
+                        android:text="@string/flamingoCardTitle"
+                        android:textColor="@color/cardTitleFontColor"
+                        android:textSize="@dimen/cardTitleFontSize" />
+
+                </RelativeLayout>
+
+                <!-- CheckBox Options for Flamingo Start -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="@dimen/paddingCardText">
+
+
+                    <CheckBox
+                        android:id="@+id/flamingoIndia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/flamingoFacts_Opt1" />
+
+                    <CheckBox
+                        android:id="@+id/flamingoJapan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/flamingoFacts_Opt2" />
+
+                    <CheckBox
+                        android:id="@+id/flamingoSouthAfrica"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/flamingoFacts_Opt3" />
+
+                    <CheckBox
+                        android:id="@+id/flamingoSrilanka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/flamingoFacts_Opt4" />
+
+                </LinearLayout>
+                <!-- CheckBox Options for Flamingo Ends Here -->
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Quiz Question Five on Gorilla Options with Answer Input Type Option-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/gorillaCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/cardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/gorillaImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cDescriptionGorilla"
+                        android:cropToPadding="true"
+                        android:src="@drawable/gorilla" />
+
+                    <TextView
+                        android:id="@+id/gorillaCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/cardTitleBackground"
+                        android:padding="@dimen/cardTitleFontPadding"
+                        android:text="@string/gorillaCardTitle"
+                        android:textColor="@color/cardTitleFontColor"
+                        android:textSize="@dimen/cardTitleFontSize" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/gorillaAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gorillaEdittextAnswer_topMargin"
+                        android:fontFamily="@string/Roboto"
+                        android:hint="@string/gorillaAnswer"
+                        android:inputType="textCapSentences" />
+
+                    <!-- Given hints for Gorilla Wieght -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/gorillaGivenHintOptionsTitle_leftMargin"
+                        android:layout_marginTop="@dimen/gorillaEdittextAnswer_topMargin"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/gorillaGivenHintOptionsTitle"
+                        android:textStyle="bold" />
+
+                    <!-- First Column and Second Column -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gorillaHintOptions1and2_topMargin"
+                        android:fontFamily="@string/Roboto"
+                        android:gravity="center"
+                        android:text="@string/gorillaGivenHintOption_1and2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/gorillaHintOptions_BelowLine"
+                        android:fontFamily="@string/Roboto"
+                        android:gravity="center"
+                        android:text="@string/gorillaGivenHintOption_3and4" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Quiz Question SIX on Meerkat Options with Answer Type Option-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/meerkatCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/cardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/meerkatImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/cDescriptionMeerkat"
+                        android:cropToPadding="true"
+                        android:src="@drawable/meerkat" />
+
+                    <TextView
+                        android:id="@+id/meerkatCardTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@color/cardTitleBackground"
+                        android:padding="@dimen/cardTitleFontPadding"
+                        android:text="@string/meerkatCardTitle"
+                        android:textColor="@color/cardTitleFontColor"
+                        android:textSize="@dimen/cardTitleFontSize" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/meerkatAnswer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/meerkatEdittextAnswer_topMargin"
+                        android:fontFamily="@string/Roboto"
+                        android:hint="@string/gorillaAnswer"
+                        android:inputType="textCapSentences" />
+
+                    <!-- Given hints for Meerkat Nick Names -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/meerkatGivenHintOptionsTitle_leftMargin"
+                        android:layout_marginTop="@dimen/meerkatEdittextAnswer_topMargin"
+                        android:fontFamily="@string/Roboto"
+                        android:text="@string/meerkatGivenHintOptionsTitle"
+                        android:textStyle="bold" />
+
+                    <!-- First Column and Second Column -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/meerkatHintOptions1and2_topMargin"
+                        android:fontFamily="@string/Roboto"
+                        android:gravity="center"
+                        android:text="@string/meerkatGivenHintOption_1and2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/meerkatHintOptions_BelowLine"
+                        android:fontFamily="@string/Roboto"
+                        android:gravity="center"
+                        android:text="@string/meerkatGivenHintOption_3and4" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Message Display Card-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/thankYouMessageCard_view"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="@dimen/card_view_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/endCardBackground"
+            card_view:cardCornerRadius="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleThankYouCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/thankTitleTopMargin"
+                    android:gravity="center"
+                    android:text="@string/thankYouTitle"
+                    android:textAllCaps="true"
+                    android:textColor="@color/cardTitleFontColor"
+                    android:textSize="@dimen/thankTitleFontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subTitleThankYouCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/thankYouSubTitle"
+                    android:textAllCaps="true"
+                    android:textColor="@color/thankYouCardSubTitle"
+                    android:textSize="@dimen/thankSubTitleFontSize"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/thankYouParagraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/thankParagraphTopMargin"
+                    android:paddingEnd="@dimen/thankParagraphPaddingRight"
+                    android:paddingStart="@dimen/thankParagraphPaddingLeft"
+                    android:text="@string/thankYouParagraph"
+                    android:textColor="@color/thankYouCardFonts"
+                    android:textSize="@dimen/thankParagraphFontSize" />
+
+                <TextView
+                    android:id="@+id/endThankYou"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/thankYouTopMargin"
+                    android:gravity="end"
+                    android:paddingEnd="@dimen/thankParagraphPaddingRight"
+                    android:paddingStart="@dimen/thankParagraphPaddingLeft"
+                    android:text="@string/ThankYou"
+                    android:textColor="@color/thankYouCardFonts"
+                    android:textSize="@dimen/thankParagraphFontSize" />
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/Roboto"
+                    android:paddingEnd="@dimen/thankParagraphPaddingRight"
+                    android:paddingStart="@dimen/thankParagraphPaddingLeft"
+                    android:text="@string/signature"
+                    android:textSize="@dimen/signatureFontSize" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Submit Button and Reset Button Options End of the Quiz-->
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/subandresCard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/card_view_topMargin"
+            card_view:cardBackgroundColor="@color/endCardBackground"
+            card_view:cardCornerRadius="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/submitButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="submitQuiz"
+                    android:text="@string/submitButton"
+                    android:textColor="@color/cardTitleFontColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/resetButton"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="reset"
+                    android:text="@string/resetButton"
+                    android:textColor="@color/cardTitleFontColor"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

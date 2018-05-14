@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d0d235</color>
+    <color name="colorPrimaryDark">#6c6e00</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Custom defined colors for APP -->
+    <color name="hintText_Color">#ffffff</color>
+    <color name="cardTitleBackground">#8c000000</color>
+    <color name="cardTitleFontColor">#ffffff</color>
+    <color name="cardBackground">#ffffff</color>
+    <color name="homeCardBackground">#00ffffff</color>
+    <color name="endCardBackground">#00ffffff</color>
+
+    <!-- Thank You Message Card Color Properties -->
+    <color name="thankYouCardFonts">#ffffff</color>
+    <color name="thankYouCardSubTitle">#81ef3c</color>
+</resources>

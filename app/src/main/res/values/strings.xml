@@ -1,0 +1,149 @@
+<resources>
+    <string name="app_name">AnimalWorld</string>
+
+    <!-- Custom Strings for the APP -->
+
+
+    <!-- Content Descriptions... -->
+    <string name="homeCardImage">Welcome Screen of the APP</string>
+    <string name="homeCardInputHint">Enter Your Name</string>
+
+
+    <!--  App Font Properties -->
+    <string name="Roboto">Roboto</string>
+    <string name="Regular">Regular</string>
+
+
+    <!--  Home Card View EditTextView Properties -->
+    <string name="EnterName">Enter Your Name</string>
+
+    <!--  Home Card View ID -->
+    <string name="welComeCard">welcome_card</string>
+
+
+    <!--   Content Descriptions for all the Quiz Card Images-->
+    <string name="cDescriptionElephant">Elephant</string>
+    <string name="cDescriptionHorses">Horses</string>
+    <string name="cDescriptionKingfishers">Kingfisher</string>
+    <string name="cDescriptionCat">Cat</string>
+    <string name="cDescriptionDog">Dog</string>
+    <string name="cDescriptionFlamingo">Flamingo</string>
+    <string name="cDescriptionGorilla">Gorilla</string>
+    <string name="cDescriptionMeerkat">Meerkat</string>
+    <string name="cDescriptionParrot">Parrot</string>
+    <string name="cDescriptionSwan">Swan</string>
+    <string name="cDescriptionTurtle">Turtle\'s</string>
+
+
+    <!-- Quiz Questions Start -->
+
+    <!-- Quiz Question One on Elephant Options with Radio Button-->
+    <string name="elephantCardTitle">What is the life expectancy of an avarage Elephant?</string>
+    <string name="elephantAge_Opt1">150</string>
+    <string name="elephantAge_Opt2">100</string>
+    <string name="elephantAge_Opt3">70</string>
+    <string name="elephantAge_Opt4">30</string>
+
+    <!-- Quiz Question Two on Horses Options with Radio Button-->
+    <string name="horseCardTitle">Horses have how many bones?</string>
+    <string name="horseBones_Opt1">175</string>
+    <string name="horseBones_Opt2">210</string>
+    <string name="horseBones_Opt3">205</string>
+    <string name="horseBones_Opt4">267</string>
+
+    <!-- Quiz Question Three on Kingfisher Options with Radio Button-->
+    <string name="kingfisherCardTitle">Kingfishers make a ____________ sound</string>
+    <string name="kingfisherSound_Opt1">Clucking Sound</string>
+    <string name="kingfisherSound_Opt2">Howling Sound</string>
+    <string name="kingfisherSound_Opt3">Hooting Sound</string>
+    <string name="kingfisherSound_Opt4">Hissing Sound</string>
+    <string name="kingfisherSound_Opt5">Dry, Loud, Screeming Sound</string>
+
+    <!-- Quiz Question Four on Cat Options with Radio Button-->
+    <string name="catCardTitle">What\'s it called when Cat rubs the side of her head?</string>
+    <string name="catBehaviour_Opt1">Tagging</string>
+    <string name="catBehaviour_Opt2">Bunting</string>
+    <string name="catBehaviour_Opt3">Brocking</string>
+    <string name="catBehaviour_Opt4">Beaning</string>
+
+    <!-- Quiz Question Five on Dog -->
+    <string name="dogCardTitle">What are the natural charecterstics of a Dog?</string>
+    <string name="dogFacts_Opt1">Loving</string>
+    <string name="dogFacts_Opt2">Caring</string>
+    <string name="dogFacts_Opt3">Hate</string>
+    <string name="dogFacts_Opt4">Protecting</string>
+
+    <!-- Quiz Question Six on Flamingo -->
+    <string name="flamingoCardTitle">The lesser Flamingo is found in which are these following countries?</string>
+    <string name="flamingoFacts_Opt1">India</string>
+    <string name="flamingoFacts_Opt2">Japan</string>
+    <string name="flamingoFacts_Opt3">South Africa</string>
+    <string name="flamingoFacts_Opt4">Srilanka</string>
+
+    <!-- Quiz Question Seven on Gorilla -->
+    <string name="gorillaCardTitle">How much can a average male Gorilla weigh?</string>
+    <string name="gorillaAnswer">Enter Your Answer Here</string>
+
+    <string name="gorillaGivenHintOptionsTitle">Your options are</string>
+    <string name="gorillaGivenHintOption_1and2">A. 500 Pounds \t \t \t B. 300 Pounds</string>
+    <string name="gorillaGivenHintOption_3and4">C. 400 Pounds \t \t \t D. 150 Pounds</string>
+
+
+    <!-- Quiz Question Eight on Meerkat -->
+    <string name="meerkatCardTitle">In South Africa the Meerkat is Called the ___________</string>
+    <string name="meerkatAnswer">Enter Your Answer Here</string>
+
+    <string name="meerkatGivenHintOptionsTitle">Your options are</string>
+    <string name="meerkatGivenHintOption_1and2">A. sun devil \t \t \t B. sun angel</string>
+    <string name="meerkatGivenHintOption_3and4">C. sun spirit \t \t \t D. sun shine</string>
+
+
+    <!-- Quiz Question Nine on Parrot -->
+    <string name="parrotCardTitle">How many types of parrots are there</string>
+    <string name="parrotNoOfTypes_Opt1">350</string>
+    <string name="parrotNoOfTypes_Opt2">450</string>
+    <string name="parrotNoOfTypes_Opt3">250</string>
+    <string name="parrotNoOfTypes_Opt4">550</string>
+
+    <!-- Quiz Question Ten on Swan -->
+    <string name="swanCardTitle">What color are the feathers of baby Swan?</string>
+    <string name="swanFacts_Opt1">Yellow</string>
+    <string name="swanFacts_Opt2">Green</string>
+    <string name="swanFacts_Opt3">White</string>
+    <string name="swanFacts_Opt4">Red</string>
+    <string name="swanFacts_Opt5">Black</string>
+
+    <!-- Quiz Question Eleven on Turtles -->
+    <string name="turtleCardTitle">Why do turtles leave the water?</string>
+    <string name="turtleFacts_Opt1">To lay eggs</string>
+    <string name="turtleFacts_Opt2">To mate</string>
+    <string name="turtleFacts_Opt3">To breath fresh air</string>
+    <string name="turtleFacts_Opt4">To hunt for food</string>
+
+    <!-- Quiz Questions Ends HERE  -->
+
+
+    <!-- Thank You Card Message -->
+    <string name="thankYouTitle">Thanks for using</string>
+    <string name="thankYouSubTitle">Animal World Quiz</string>
+    <string name="thankYouParagraph">This quiz app is developed by Nagaraja Papanna, after completing all the lessons of Google India Challenge Scholarship - Android Basics
+    \n
+    \nI thank the Google and Udacity for selecting me for the scholarship program and i hope i have fulfilled the given opportunity.</string>
+    <string name="ThankYou">Thank You</string>
+    <string name="signature">Nagaraja</string>
+
+    <!-- Submit Button and Reset Buttons -->
+    <string name="submitButton">Submit</string>
+    <string name="resetButton">Quiz Reset</string>
+
+
+    <string name="allCorrectAns">Congratulations!! You Got All The Right Answers!</string>
+    <string name="score">%1$d right answers</string>
+    <string name="quizResultText">You Got %1$d Right Answers and %2$d Wrong Answers. You Can Retake the Quiz By Clicking Reset Button!</string>
+    <string name="shareResultText">Hey I Got %1$d Right Answers and %2$d Wrong Answers of the Quiz!.</string>
+    <string name="shareResult">Share using</string>
+    <string name="reset">Quiz Reset!</string>
+
+    <!-- Signature FontStyle -->
+    <string name="lucianFont">lucian</string>
+</resources>

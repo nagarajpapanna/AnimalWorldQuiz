@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global Card View dimensions-->
+    <dimen name="card_view_width">312.5dp</dimen>
+    <dimen name="card_view_height">462.5dp</dimen>
+    <dimen name="card_view_topMargin">58dp</dimen>
+
+    <!-- Home Card View dimensions-->
+    <dimen name="home_card_view_topMargin">58dp</dimen>
+    <dimen name="home_card_view_bottomMargin">95.5dp</dimen>
+    <dimen name="home_card_EditTextBottomMargin">76dp</dimen>
+
+
+    <!-- Card View Radio Group Questions dimensions-->
+
+    <dimen name="paddingCardText">24dp</dimen>
+
+
+    <dimen name="paddingStart">16dp</dimen>
+    <dimen name="paddingBottom">16dp</dimen>
+    <dimen name="paddingEnd">16dp</dimen>
+    <dimen name="paddingTop">16dp</dimen>
+
+    <!-- Global Cards View Properties-->
+    <dimen name="cardTitleFontSize">18sp</dimen>
+    <dimen name="cardTitleFontPadding">8dp</dimen>
+
+
+    <!-- This below dimensions for Gorilla Card View -->
+    <dimen name="gorillaEdittextAnswer_topMargin">16dp</dimen>
+
+
+    <dimen name="gorillaGivenHintOptionsTitle_leftMargin">24dp</dimen>
+    <dimen name="gorillaHintOptions1and2_topMargin">20dp</dimen>
+    <dimen name="gorillaHintOptions_BelowLine">8dp</dimen>
+
+
+    <!-- This below dimensions for Meerkat Card View -->
+    <dimen name="meerkatEdittextAnswer_topMargin">16dp</dimen>
+
+
+    <dimen name="meerkatGivenHintOptionsTitle_leftMargin">24dp</dimen>
+    <dimen name="meerkatHintOptions1and2_topMargin">20dp</dimen>
+    <dimen name="meerkatHintOptions_BelowLine">8dp</dimen>
+
+
+    <!-- Thank You Card Font Size -->
+    <dimen name="thankTitleTopMargin">30dp</dimen>
+    <dimen name="thankTitleFontSize">30sp</dimen>
+    <dimen name="thankSubTitleFontSize">22sp</dimen>
+    <dimen name="thankParagraphTopMargin">25dp</dimen>
+    <dimen name="thankParagraphPaddingLeft">16dp</dimen>
+    <dimen name="thankParagraphPaddingRight">16dp</dimen>
+    <dimen name="thankParagraphFontSize">18sp</dimen>
+    <dimen name="thankYouTopMargin">10dp</dimen>
+    <dimen name="signatureFontSize">18sp</dimen>
+</resources>
